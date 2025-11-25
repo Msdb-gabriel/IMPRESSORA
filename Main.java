@@ -131,18 +131,11 @@ public class Main {
 
     public static void ImpressaoTexto() {
 
-        if (conexaoAberta) {
-            System.out.println("**** Configuração da impressão ****");
-            System.out.println("Escolha o alinhamento: 0-Esquerda, 1-Centro, 2-Direita");
-            int posicao = Integer.parseInt(scanner.nextLine());
-            System.out.println("Escolha o estilo: 0-Normal, 1-Negrito, 2-Itálico, 4-Sublinhado");
-            int estilo = Integer.parseInt(scanner.nextLine());
-            System.out.println("Escolha o tamanho: 0-Padrão, 1-Médio, 2-Grande");
-            int tamanho = Integer.parseInt(scanner.nextLine());
+  if (conexaoAberta) {
 
             System.out.println("Texto a ser impresso: ");
             String dados = scanner.nextLine();
-            int resultado = ImpressoraDLL.INSTANCE.ImpressaoTexto(dados, posicao, estilo, tamanho);
+            int resultado = ImpressoraDLL.INSTANCE.ImpressaoTexto(dados, 1, 4, 0);
 
             if (resultado == 0) {
                 System.out.println("Impressão concluida");
@@ -360,6 +353,7 @@ public class Main {
             }
         }
     }
+
 
 
 }
