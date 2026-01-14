@@ -1,5 +1,6 @@
 DOCUMENTAÇÃO DO PROJETO
 
+Este é um projeto de finaçização de semetre do curso de ADS (Análise e Desenvolvimento de Sistemas)
 
 1. Objetivo
 
